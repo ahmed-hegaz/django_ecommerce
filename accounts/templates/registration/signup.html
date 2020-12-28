@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+<div class="container">
+<h1>signup</h1>
+
+
+<form method="POST" action="">
+{% csrf_token %}
+{{form}}
+{% comment %} <button type="submit"  class="btn btn3 primary w-100">signup<button> {% endcomment %}
+    <input type="submit" class="btn btn-default btn-lg w-100" value="signup">
+
+</form>
+
+
+</div>
+{% endblock body %}
